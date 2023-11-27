@@ -1,6 +1,6 @@
 const Navbar = () => {
   return (
-    <header className="fixed top-0 w-full z-50 bg-gray-200/50 backdrop-blur-xl border-b">
+    <header className="fixed top-0 w-full z-50 bg-gray-900">
       {/* <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8"> */}
       <div className="container px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
@@ -26,7 +26,7 @@ const Navbar = () => {
               <ul className="flex items-center gap-6 text-sm">
                 <li>
                   <a
-                    className="text-gray-900 transition hover:text-gray-500/75"
+                    className="text-gray-300 transition hover:text-gray-500/75"
                     href="/"
                   >
                     Menu
@@ -34,7 +34,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a
-                    className="text-gray-900 transition hover:text-gray-500/75"
+                    className="text-gray-300 transition hover:text-gray-500/75"
                     href="/"
                   >
                     About Us
@@ -42,7 +42,7 @@ const Navbar = () => {
                 </li>
                 <li>
                   <a
-                    className="text-gray-900 transition hover:text-gray-500/75"
+                    className="text-gray-300 transition hover:text-gray-500/75"
                     href="/"
                   >
                     Contact Us
