@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="text-gray-600 body-font">
-      <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
+    <section className="body-font bg-gray-900">
+      <div className="container flex px-16 py-24 flex-col items-center md:flex-row">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font text-3xl sm:text-5xl mb-4 font-bold text-gray-900">
+          <h1 className="title-font text-3xl sm:text-5xl mb-4 font-bold text-white">
             Fresh bakery straight out of the oven.
           </h1>
-          <p className="mb-8 leading-relaxed">
+          <p className="mb-8 leading-relaxed text-muted">
             Finest bakery delights, with fresh cow milk tea complimenting every
             bite of our savouries.
           </p>
@@ -23,7 +23,7 @@ const Hero = () => {
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
           <Image
-            className="object-cover object-center rounded"
+            className="object-cover object-center rounded-3xl"
             width={720}
             height={600}
             priority
