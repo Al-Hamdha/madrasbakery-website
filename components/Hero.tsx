@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <section className="body-font bg-gray-900">
+    <section className="body-font">
       <div className="container flex px-16 py-24 pt-48 flex-col items-center md:flex-row">
         <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-          <h1 className="title-font text-3xl sm:text-5xl mb-4 font-bold text-white">
+          <h1 className="title-font text-3xl sm:text-5xl mb-4 font-bold">
             Fresh bakery straight out of the oven.
           </h1>
-          <p className="mb-8 leading-relaxed text-muted">
+          <p className="mb-8 leading-relaxed text-muted-foreground">
             Finest bakery delights, with fresh cow milk tea complimenting every
             bite of our savouries.
           </p>
