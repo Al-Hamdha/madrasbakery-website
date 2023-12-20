@@ -48,21 +48,65 @@ const menu: MenuType = [
       // { image: "carrotCake.jpg", name: "Carrot Cake", price: 888 },
     ],
   },
+  {
+    category: "puff",
+    items: [
+      { image: "chickenPuff.jpg", name: "Chicken Puff", price: 3.0 },
+      { image: "eggPuff.jpg", name: "Egg Puff", price: 3.0 },
+      { image: "vegPuff.jpg", name: "Veg Puff", price: 2.5 },
+    ],
+  },
 ];
 
 const Menu = () => {
   return (
-    <div className=" bg-stone-200/50 p-8">
+    <div className="p-8">
       <div className="container mx-auto space-y-16 p-0">
         {menu.map((c) => (
           <div key={c.category}>
-            <div className="flex items-center mb-4">
-              <h1 className="text-3xl font-bold mr-4">
+            <div className="flex items-center mb-2">
+              <h1 className="text-xl font-bold">
                 {c.category.charAt(0).toUpperCase() + c.category.slice(1)}
               </h1>
-              <div className="w-full border-b border-gray-300" />
+              {/* <div className="w-full border-b border-gray-300" /> */}
             </div>
-            <div className="grid gap-4 md:grid-cols-5">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {c.items.map((item) => (
+                <div
+                  key={item.name}
+                  className="relative p-2 h-36 items-center flex gap-4 cursor-pointer group"
+                >
+                  {/*   hover:rounded-md hover:scale-[1.02] */}
+                  <div className="absolute border rounded-xl border-gray-300 top-0 bottom-0 right-0 left-0 transition-all ease-[cubic-bezier(0.35, 0.12, 0.14, 1.42)] -z-50 group-hover:bg-slate-100 group-hover:rounded-lg group-hover:scale-[1.04]" />
+                  <div className="relative w-32 h-full">
+                    <Image
+                      className="object-cover object-center rounded-lg"
+                      fill
+                      alt="hero"
+                      src={`/images/menu/${c.category}/${item.image}`}
+                      sizes="(max-width: 768px) 50vw, 25vw"
+                    />
+                  </div>
+
+                  <div className="flex-1 space-y-1">
+                    <div className="font-semibold text-gray-800 line-clamp-2">
+                      {item.name}
+                    </div>
+                    <p className="text-xs text-muted-foreground line-clamp-3">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Alias sit assumenda facilis.
+                    </p>
+                    <div className="text-lg line-clamp-1">
+                      <span className="text-xs">RM </span>
+                      <span className="font-semibold text-gray-800">
+                        {item.price.toFixed(2)}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+            {/* <div className="grid gap-4 md:grid-cols-5">
               {c.items.map((i) => (
                 <div
                   key={i.image}
@@ -89,7 +133,7 @@ const Menu = () => {
                   </div>
                 </div>
               ))}
-            </div>
+            </div> */}
           </div>
         ))}
       </div>
