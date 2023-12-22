@@ -173,8 +173,7 @@ const Menu = () => {
                   key={item.name}
                   className="relative p-2 h-36 items-center flex gap-4 cursor-pointer group"
                 >
-                  {/*   hover:rounded-md hover:scale-[1.02] */}
-                  <div className="absolute border rounded-xl border-gray-300 top-0 bottom-0 right-0 left-0 transition-all ease-[cubic-bezier(0.35, 0.12, 0.14, 1.42)] -z-50 group-hover:bg-slate-100 group-hover:rounded-lg group-hover:scale-[1.04]" />
+                  <div className="absolute border rounded-xl border-muted top-0 bottom-0 right-0 left-0 transition-all ease-[cubic-bezier(0.35, 0.12, 0.14, 1.42)] -z-50 group-hover:bg-primary/10 group-hover:rounded-lg group-hover:scale-[1.04]" />
                   <div className="relative w-32 h-full">
                     <Image
                       className="object-cover object-center rounded-lg"
@@ -186,15 +185,13 @@ const Menu = () => {
                   </div>
 
                   <div className="flex-1 space-y-1">
-                    <div className="font-semibold text-gray-800 line-clamp-2">
-                      {item.name}
-                    </div>
+                    <h2 className="font-semibold line-clamp-2">{item.name}</h2>
                     <p className="text-xs text-muted-foreground line-clamp-3">
                       {item.description}
                     </p>
                     <div className="text-lg line-clamp-1">
                       <span className="text-xs">RM </span>
-                      <span className="font-semibold text-gray-800">
+                      <span className="font-semibold">
                         {item.price.toFixed(2)}
                       </span>
                     </div>

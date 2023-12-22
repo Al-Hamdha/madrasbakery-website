@@ -3,7 +3,7 @@ import Menu from "@/components/Menu";
 
 export default function Home() {
   return (
-    <main>
+    <main className="pt-28">
       <Hero />
       <Menu />
     </main>
