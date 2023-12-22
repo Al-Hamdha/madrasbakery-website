@@ -19,7 +19,7 @@ const Hero = () => {
           Visit Us
         </button>
       </div>
-      <div className="grid grid-cols-2 gap-2 grid-rows-[repeat(5,_minmax(100px,_1fr))] md:grid-rows-[repeat(5,_minmax(180px,_1fr))] md:gap-4 md:flex-1">
+      <div className="grid grid-cols-2 gap-4 grid-rows-[repeat(5,_minmax(100px,_1fr))] md:grid-rows-[repeat(5,_minmax(180px,_1fr))] md:flex-1">
         <div
           className={cn("relative rounded-2xl overflow-hidden", "col-span-2")}
         >
