@@ -158,14 +158,15 @@ const menu: MenuType = [
 const Menu = () => {
   return (
     <div className="p-8">
-      <div className="container mx-auto space-y-16 p-0">
+      <div className="container mx-auto space-y-4 p-0">
+        <h1 className="font-display text-3xl md:text-5xl">Our Menu</h1>
         {menu.map((c) => (
           <div key={c.category}>
             <div className="flex items-center mb-2">
-              <h1 className="text-xl font-bold">
+              <h2 className="text-xs text-muted-foreground font-semibold">
                 {c.category.charAt(0).toUpperCase() + c.category.slice(1)}
-              </h1>
-              {/* <div className="w-full border-b border-gray-300" /> */}
+              </h2>
+              <div className="w-full border-b border-muted ml-2" />
             </div>
             <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {c.items.map((item) => (
@@ -199,34 +200,6 @@ const Menu = () => {
                 </div>
               ))}
             </div>
-            {/* <div className="grid gap-4 md:grid-cols-5">
-              {c.items.map((i) => (
-                <div
-                  key={i.image}
-                  className="bg-white rounded-2xl flex gap-4 p-4 md:flex-col transition-all duration-200 hover:scale-105 hover:shadow-xl"
-                >
-                  <div className="relative w-24 h-24 md:w-full md:h-36">
-                    <Image
-                      className="object-cover object-center rounded-xl"
-                      fill
-                      alt="hero"
-                      src={`/images/menu/${c.category}/${i.image}`}
-                      sizes="(max-width: 768px) 50vw, 25vw"
-                    />
-                  </div>
-                  <div className="flex-1 flex flex-col justify-center gap-2">
-                    <h2 className="font-semibold text-lg">{i.name}</h2>
-                    <p className="text-xs">
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                    </p>
-                    <div className="font-bold text-xl">
-                      <span className="text-xs">RM </span>
-                      {i.price.toFixed(2)}
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div> */}
           </div>
         ))}
       </div>
