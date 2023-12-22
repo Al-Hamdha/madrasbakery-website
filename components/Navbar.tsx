@@ -1,13 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
+import { Button } from "./ui/button";
 
 const Navbar = () => {
   return (
-    <div className="fixed top-0 w-full z-50 border border-muted bg-black/60 backdrop-blur-2xl">
-      <div className="container py-4 flex justify-between">
+    <div className="sticky top-0 w-full z-50 border border-muted bg-black/80 backdrop-blur-lg backdrop-saturate-150">
+      <div className="container py-4 flex justify-between items-center">
         <Link href="/" className="flex gap-2 items-center md:gap-4">
           <div className="relative w-16 h-16 rounded-full overflow-hidden">
             <Image
+              sizes="256px"
               className="object-cover origin-[30px_center] scale-[1.5]"
               src="/images/logo.jpg"
               alt="Madras Bakery Logo"
@@ -18,6 +20,7 @@ const Navbar = () => {
             Madras <br /> Bakery
           </div>
         </Link>
+        <Button variant={"outline"}>Visit Us</Button>
       </div>
     </div>
   );
