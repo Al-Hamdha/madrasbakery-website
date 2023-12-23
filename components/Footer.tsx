@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import { Separator } from "./ui/Separator";
+import { Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
-    <footer className="space-y-8 py-8">
+    <footer className="space-y-8 py-8 bg-primary-foreground border-t sticky bottom-0 -z-50">
       <div className="container flex flex-col md:flex-row gap-12 justify-between items-center">
         <div className="flex gap-2 items-center">
           <Logo className="w-28 h-28" />
@@ -12,34 +13,34 @@ const Footer = () => {
             Madras <br /> Bakery
           </div>
         </div>
-        <div className="flex items-start gap-12 flex-col md:flex-row">
+        <div className="flex gap-12 flex-col items-center text-center md:text-start md:flex-row md:items-start">
           <div>
-            <h2 className="font-medium text-muted-foreground tracking-widest text-sm mb-3">
+            <h2 className="font-medium text-muted-foreground tracking-widest text-xs mb-3">
               SOCIALS
             </h2>
             <nav>
-              <ul>
+              <ul className="space-y-2">
                 <li>
                   <Link
                     href="https://www.facebook.com/madrasbakerykl"
-                    className="hover:text-muted-foreground cursor-pointer"
+                    className="flex gap-2 items-center underline hover:text-muted-foreground cursor-pointer"
                   >
-                    Facebook
+                    <Facebook /> <span>Facebook</span>
                   </Link>
                 </li>
                 <li>
                   <Link
                     href="https://www.instagram.com/madrasbakerykl/#"
-                    className="hover:text-muted-foreground cursor-pointer"
+                    className="flex gap-2 items-center underline hover:text-muted-foreground cursor-pointer"
                   >
-                    Instagram
+                    <Instagram /> <span>Instagram</span>
                   </Link>
                 </li>
               </ul>
             </nav>
           </div>
           <div>
-            <h2 className="font-medium text-muted-foreground tracking-widest text-sm mb-3">
+            <h2 className="font-medium text-muted-foreground tracking-widest text-xs mb-3">
               ADDRESS
             </h2>
             <p>
