@@ -163,8 +163,10 @@ const Menu = () => {
         {menu.map((c) => (
           <div key={c.category}>
             <div className="flex items-center mb-2">
-              <h2 className="text-xs text-muted-foreground font-semibold">
-                {c.category.charAt(0).toUpperCase() + c.category.slice(1)}
+              {/* <h2 className="text-xs text-muted-foreground font-semibold"> */}
+              <h2 className="font-medium text-muted-foreground tracking-widest text-xs">
+                {/* {c.category.charAt(0).toUpperCase() + c.category.slice(1)} */}
+                {c.category.toUpperCase()}
               </h2>
               <div className="w-full border-b border-muted ml-2" />
             </div>
