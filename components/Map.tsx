@@ -7,19 +7,10 @@ const Map = () => {
           style={{ height: "100%", width: "100%", maxWidth: "100%" }}
         >
           <iframe
-            // style={{ height: "100%", width: "100%", border: 0 }}
-            className="h-full w-full border-2 grayscale-[50%]"
+            className="h-full w-full hue-rotate-180 invert brightness-75 contrast-150"
             src="https://www.google.com/maps/embed/v1/place?q=Madras+Bakery+-+Masjid+India,+Jalan+Masjid+India,+Kuala+Lumpur+City+Centre,+Kuala+Lumpur,+Federal+Territory+of+Kuala+Lumpur,+Malaysia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
           />
         </div>
-        {/* <a
-          className="my-codefor-googlemap"
-          rel="nofollow"
-          href="https://www.bootstrapskins.com/themes"
-          id="make-map-infor-mation"
-        >
-          premium bootstrap themes
-        </a> */}
         <style
           dangerouslySetInnerHTML={{
             __html:
