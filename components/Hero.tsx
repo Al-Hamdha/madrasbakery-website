@@ -1,6 +1,8 @@
+"use client";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
-import { Button } from "./ui/button";
+import { Link } from "react-scroll";
+import { buttonVariants } from "./ui/button";
 
 const Hero = () => {
   return (
@@ -16,7 +18,15 @@ const Hero = () => {
           {/* <br /> */}
           tea, creating a symphony of flavors.
         </p>
-        <Button size={"lg"}>Visit Us</Button>
+        <Link
+          className={cn(buttonVariants({ size: "lg" }), "cursor-pointer")}
+          to="visitUs"
+          smooth={true}
+          offset={-80}
+          duration={500}
+        >
+          Visit Us
+        </Link>
       </div>
       <div className="grid grid-cols-2 gap-4 grid-rows-[repeat(5,_minmax(100px,_1fr))] md:grid-rows-[repeat(5,_minmax(150px,_1fr))] md:flex-1">
         <div

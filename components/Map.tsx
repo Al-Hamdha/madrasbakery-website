@@ -1,6 +1,15 @@
 const Map = () => {
   return (
-    <div className="container">
+    <div className="container py-8 space-y-8">
+      <div className="">
+        <p className="font-display mb-6 text-center leading-tight text-4xl md:text-5xl">
+          Drop by and <br className="md:hidden" /> try them all!
+        </p>
+        <p className="text-lg text-muted-foreground text-center">
+          They taste just as good as they look, no cap! Curious? Come find us at
+          the heart of town, Masjid India in Kuala Lumpur.
+        </p>
+      </div>
       <div className="mx-auto overflow-hidden rounded-3xl resize-none h-72">
         <div
           id="g-mapdisplay"
