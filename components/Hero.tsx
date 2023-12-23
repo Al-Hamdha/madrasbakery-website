@@ -2,7 +2,7 @@
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import { Link } from "react-scroll";
-import { buttonVariants } from "./ui/MyButton";
+import { buttonVariants } from "./ui/Button";
 
 const Hero = () => {
   return (
