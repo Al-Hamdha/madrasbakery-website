@@ -1,6 +1,6 @@
 "use client";
 import NextLink from "next/link";
-import { buttonVariants } from "./ui/button";
+import { buttonVariants } from "./ui/MyButton";
 import Logo from "./Logo";
 import { Link } from "react-scroll";
 import { cn } from "@/lib/utils";
