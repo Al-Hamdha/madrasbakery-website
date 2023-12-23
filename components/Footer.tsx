@@ -56,10 +56,10 @@ const Footer = () => {
         </div>
       </div>
       <Separator />
-      <div className="container text-xs text-center">
-        Designed and developed by{" "}
+      <div className="container text-xs text-muted-foreground text-center">
+        Made with ❤️ by{" "}
         <Link
-          className="underline hover:text-muted-foreground"
+          className="underline text-primary hover:text-muted-foreground"
           href="https://github.com/sheikhameen"
         >
           Sheikh Ameen
