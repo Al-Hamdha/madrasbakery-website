@@ -9,7 +9,7 @@ export default function Home() {
       <Menu />
       <div className="py-12">
         <p className="font-display mb-6 text-center leading-tight text-4xl md:text-5xl">
-          Drop by and try them all!
+          Drop by and <br className="md:hidden" /> try them all!
         </p>
         <p className="text-lg text-muted-foreground text-center">
           They taste just as good as they look, no cap! Curious? Come find us at
