@@ -6,8 +6,8 @@ const Map = () => {
           Drop by and <br className="md:hidden" /> try them all!
         </p>
         <p className="text-lg text-muted-foreground text-center">
-          They taste just as good as they look, no cap! Curious? Come find us at
-          the heart of town, Masjid India in Kuala Lumpur.
+          They taste just as good as they look! Curious? Come find us at the
+          heart of town, Masjid India in Kuala Lumpur.
         </p>
       </div>
       <div className="mx-auto overflow-hidden rounded-3xl resize-none h-72">
