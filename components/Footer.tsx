@@ -5,14 +5,14 @@ import { Separator } from "./ui/Separator";
 const Footer = () => {
   return (
     <footer className="space-y-8 py-8">
-      <div className="container flex gap-12 justify-between items-center">
+      <div className="container flex flex-col md:flex-row gap-12 justify-between items-center">
         <div className="flex gap-2 items-center">
           <Logo className="w-28 h-28" />
           <div className="font-display text-4xl leading-none">
             Madras <br /> Bakery
           </div>
         </div>
-        <div className="flex items-start gap-12">
+        <div className="flex items-start gap-12 flex-col md:flex-row">
           <div>
             <h2 className="font-medium text-muted-foreground tracking-widest text-sm mb-3">
               SOCIALS
