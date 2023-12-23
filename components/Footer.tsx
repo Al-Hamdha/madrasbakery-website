@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
-import { Separator } from "./ui/separator";
+import { Separator } from "./ui/Separator";
 
 const Footer = () => {
   return (
