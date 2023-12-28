@@ -7,7 +7,7 @@ import { Element } from "react-scroll";
 
 export default function Home() {
   return (
-    <main className="mt-4 z-10">
+    <main className="mt-4 z-10 space-y-16">
       <Hero />
       <Menu />
       <CustomCakes />

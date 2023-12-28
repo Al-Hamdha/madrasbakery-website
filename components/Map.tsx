@@ -1,8 +1,8 @@
 const Map = () => {
   return (
-    <div className="container py-8 space-y-8">
+    <div className="container space-y-8">
       <div className="">
-        <p className="font-display mb-6 text-center leading-tight text-4xl md:text-5xl">
+        <p className="font-display mb-6 text-center leading-tight text-4xl sm:text-5xl md:text-6xl">
           Drop by and <br className="md:hidden" /> try them all!
         </p>
         <p className="text-lg text-muted-foreground text-center">

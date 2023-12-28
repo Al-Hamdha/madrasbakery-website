@@ -157,54 +157,52 @@ const menu: MenuType = [
 
 const Menu = () => {
   return (
-    <div className="p-8">
-      <div className="container mx-auto space-y-4 p-0">
-        <h1 className="font-display text-3xl md:text-5xl">Our Menu</h1>
-        {menu.map((c) => (
-          <div key={c.category}>
-            <div className="flex items-center mb-2">
-              {/* <h2 className="text-xs text-muted-foreground font-semibold"> */}
-              <h2 className="font-medium text-muted-foreground tracking-widest text-xs">
-                {/* {c.category.charAt(0).toUpperCase() + c.category.slice(1)} */}
-                {c.category.toUpperCase()}
-              </h2>
-              <div className="w-full border-b border-muted ml-2" />
-            </div>
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
-              {c.items.map((item) => (
-                <div
-                  key={item.name}
-                  className="relative p-2 h-36 items-center flex gap-4 cursor-pointer group"
-                >
-                  <div className="relative w-32 h-full">
-                    <Image
-                      className="object-cover object-center rounded-lg"
-                      fill
-                      alt="hero"
-                      src={`/images/menu/${c.category}/${item.image}`}
-                      sizes="(max-width: 768px) 50vw, 25vw"
-                    />
-                  </div>
-
-                  <div className="flex-1 space-y-1">
-                    <h2 className="font-semibold line-clamp-2">{item.name}</h2>
-                    <p className="text-xs text-muted-foreground line-clamp-3">
-                      {item.description}
-                    </p>
-                    <div className="text-lg line-clamp-1">
-                      <span className="text-xs">RM </span>
-                      <span className="font-semibold">
-                        {item.price.toFixed(2)}
-                      </span>
-                    </div>
-                  </div>
-                  <div className="absolute border rounded-xl border-muted top-0 bottom-0 right-0 left-0 transition-all ease-[cubic-bezier(0.35, 0.12, 0.14, 1.42)] group-hover:bg-primary/10 group-hover:rounded-lg group-hover:scale-[1.04]" />
-                </div>
-              ))}
-            </div>
+    <div className="container space-y-4">
+      <h1 className="font-display text-3xl md:text-5xl">Our Menu</h1>
+      {menu.map((c) => (
+        <div key={c.category}>
+          <div className="flex items-center mb-2">
+            {/* <h2 className="text-xs text-muted-foreground font-semibold"> */}
+            <h2 className="font-medium text-muted-foreground tracking-widest text-xs">
+              {/* {c.category.charAt(0).toUpperCase() + c.category.slice(1)} */}
+              {c.category.toUpperCase()}
+            </h2>
+            <div className="w-full border-b border-muted ml-2" />
           </div>
-        ))}
-      </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {c.items.map((item) => (
+              <div
+                key={item.name}
+                className="relative p-2 h-36 items-center flex gap-4 cursor-pointer group"
+              >
+                <div className="relative w-32 h-full">
+                  <Image
+                    className="object-cover object-center rounded-lg"
+                    fill
+                    alt="hero"
+                    src={`/images/menu/${c.category}/${item.image}`}
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                  />
+                </div>
+
+                <div className="flex-1 space-y-1">
+                  <h2 className="font-semibold line-clamp-2">{item.name}</h2>
+                  <p className="text-xs text-muted-foreground line-clamp-3">
+                    {item.description}
+                  </p>
+                  <div className="text-lg line-clamp-1">
+                    <span className="text-xs">RM </span>
+                    <span className="font-semibold">
+                      {item.price.toFixed(2)}
+                    </span>
+                  </div>
+                </div>
+                <div className="absolute border rounded-xl border-muted top-0 bottom-0 right-0 left-0 transition-all ease-[cubic-bezier(0.35, 0.12, 0.14, 1.42)] group-hover:bg-primary/10 group-hover:rounded-lg group-hover:scale-[1.04]" />
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
   );
 };
