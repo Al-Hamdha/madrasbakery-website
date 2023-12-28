@@ -1,4 +1,5 @@
 "use client";
+import CustomCakes from "@/components/CustomCakes";
 import Hero from "@/components/Hero";
 import Map from "@/components/Map";
 import Menu from "@/components/Menu";
@@ -9,6 +10,7 @@ export default function Home() {
     <main className="mt-4 z-10">
       <Hero />
       <Menu />
+      <CustomCakes />
       <Element name="visitUs">
         <Map />
       </Element>
