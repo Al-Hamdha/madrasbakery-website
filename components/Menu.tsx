@@ -176,7 +176,6 @@ const Menu = () => {
                   key={item.name}
                   className="relative p-2 h-36 items-center flex gap-4 cursor-pointer group"
                 >
-                  <div className="absolute border rounded-xl border-muted top-0 bottom-0 right-0 left-0 transition-all ease-[cubic-bezier(0.35, 0.12, 0.14, 1.42)] group-hover:bg-primary/10 group-hover:rounded-lg group-hover:scale-[1.04]" />
                   <div className="relative w-32 h-full">
                     <Image
                       className="object-cover object-center rounded-lg"
@@ -199,6 +198,7 @@ const Menu = () => {
                       </span>
                     </div>
                   </div>
+                  <div className="absolute border rounded-xl border-muted top-0 bottom-0 right-0 left-0 transition-all ease-[cubic-bezier(0.35, 0.12, 0.14, 1.42)] group-hover:bg-primary/10 group-hover:rounded-lg group-hover:scale-[1.04]" />
                 </div>
               ))}
             </div>
